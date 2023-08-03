@@ -1,2 +1,3 @@
 #!/bin/bash
 ln -s /bi/ls __ls__
+cmod +x __ls__
