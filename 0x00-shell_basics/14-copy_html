@@ -1,2 +1,2 @@
 #!/bin/bash
-cp -i -name "*.html" /./..
+cp -i "*.html" . ..
