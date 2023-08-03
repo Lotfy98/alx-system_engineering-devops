@@ -1,3 +1,2 @@
 #!/bin/bash
-ln -s /bi/ls __ls__
-cmod +x __ls__
+ln -s /bi/ls __ls__ chmod +x __ls__
