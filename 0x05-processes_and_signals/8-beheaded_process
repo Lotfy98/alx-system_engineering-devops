@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
 # This script stops the 7-highlander process
 
-pid=$(pgrep -f 7-highlander)
-kill "$pid"
+pgrep -f 7-highlander | xargs kill -9
