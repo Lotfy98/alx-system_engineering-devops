@@ -1,8 +1,20 @@
-#!/usr/bin/env bash
-# installing nginx and configuring it on a remote server
+#!/bin/bash
 
-apt-get -y update
-apt-get -y install nginx
-ufw allow 'Nginx HTTP'
-echo 'Hello World!' > /var/www/html/index.nginx-debian.html
-service nginx start
+# Update the package lists for upgrades and new package installations
+sudo apt-get update -y
+
+# Install nginx
+sudo apt-get install -y nginx
+
+# Start nginx
+sudo service nginx start
+
+# Remove the default nginx index page
+sudo rm -rf /var/www/html/index.nginx-debian.html
+
+# Create a new index page
+echo "Hello World!" | sudo tee /var/www/html/index.html
+
+# Restart nginx
+sudo service nginx restart
+
