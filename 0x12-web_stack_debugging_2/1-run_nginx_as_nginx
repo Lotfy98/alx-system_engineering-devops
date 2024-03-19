@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Fixes server bug
-chmod 644 /etc/nginx/nginx.conf
+sudo chmod 644 /etc/nginx/nginx.conf
 sed -Ei 's/\s*#?\s*user .*/user nginx;/' /etc/nginx/nginx.conf
 sed -Ei 's/(listen (\[::\]:)?)80/\18080/' /etc/nginx/sites-enabled/default
 pkill apache2
