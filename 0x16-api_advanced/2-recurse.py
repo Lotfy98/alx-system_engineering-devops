@@ -7,7 +7,7 @@ def recurse(subreddit, hot_list=[], after="", count=0):
     """list of titles of all hot posts on a given subreddit."""
     url = "https://www.reddit.com/r/{}/hot/.json".format(subreddit)
     headers = {
-        'User-Agent': 'Mozzila/10.0/API'
+        'User-Agent': 'My Python Reddit API Client 1.0'
     }
     params = {
         "after": after,
