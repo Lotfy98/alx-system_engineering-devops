@@ -10,7 +10,7 @@ def number_of_subscribers(subreddit):
     '''
         returning the number of subs for a given subreddit
     '''
-    user = {'User-Agent': 'redquery'}
+    user = {'User-Agent': 'Mozzila/10.0/API'}
     url = requests.get('https://www.reddit.com/r/{}/about.json'
                        .format(subreddit), headers=user).json()
     try:

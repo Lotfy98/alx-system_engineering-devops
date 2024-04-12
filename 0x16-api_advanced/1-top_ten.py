@@ -10,7 +10,7 @@ def top_ten(subreddit):
     '''
         returning the top ten posts for a given subreddit
     '''
-    user = {'User-Agent': 'redquery'}
+    user = {'User-Agent': 'Mozzila/10.0/API'}
     url = requests.get('https://www.reddit.com/r/{}/hot/.json?limit=10'
                        .format(subreddit), headers=user).json()
     try:
