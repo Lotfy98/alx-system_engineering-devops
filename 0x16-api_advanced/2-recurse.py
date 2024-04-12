@@ -7,7 +7,7 @@ def recurse(subreddit, hot_list=[], after="", count=0):
     """list of titles of all hot posts on a given subreddit."""
     url = "https://www.reddit.com/r/{}/hot/.json".format(subreddit)
     headers = {
-        "User-Agent": "redquery"
+        'User-Agent': 'redquery'
     }
     params = {
         "after": after,
